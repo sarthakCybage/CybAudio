@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CybAudio
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+
+
+
+<body>
+    <!-- Navbar items -->
+
+    <div class="container-sm">
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">CybAudio</a>
+        <a class="nav-link text-dark" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-dark" href="about.html">About <span class="sr-only">(current)</span></a>
+
+
+        <!-- drop down -->
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle bg-light text-dark border-0" href="#" role="button"
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Languages
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">Hindi</a>
+                <a class="dropdown-item" href="#">Marathi</a>
+            </div>
+        </div>
+        <!-- login btn link -->
+        <a href="/login_form.html"><button class="btn bg-success text-white" type="submit">Login</button></a>
+
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="filterCards">
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+        </form>
+
+        <!-- user profile in navbar -->
+
+
+
+
+
+
+    </nav>
+
+
+
+    <!-- cards serach functionality
+     -->
+    <!-- <input id="filterCards" class="search" type="text" placeholder="Search text here..."></input> -->
+
+    <div class="cards">
+        <div class="card">
+            <h2 class="searchable">Think like a monk</h2>
+            <p class="searchable">paragraph one</p>
+        </div>
+
+        <div class="card">
+            <h2 class="searchable">Title Two</h2>
+            <p class="searchable">paragraph two</p>
+        </div>
+        <div class="card">
+            <h2 class="searchable">Title Two</h2>
+            <p class="searchable">paragraph two</p>
+        </div>
+        <div class="card">
+            <h2 class="searchable">Title Two</h2>
+            <p class="searchable">paragraph two</p>
+        </div>
+
+
+    </div>
+</body>
+<script src="home.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+
+<script>
+    $(document).ready(function () {
+        $("#filterCards").keyup(function () {
+            var filter = $(this).val();
+            $(".card").each(function () {
+                var $i = 0;
+                $(this)
+                    .find(".searchable")
+                    .each(function () {
+                        if ($(this).text().search(new RegExp(filter, "i")) >= 0) {
+                            $i++;
+                        }
+                    });
+                if ($i > 0) {
+                    $(this).closest(".card").show();
+                } else {
+                    $(this).closest(".card").hide();
+                }
+            });
+        });
+    });
+
+</script>
+
+</html>

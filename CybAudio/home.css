@@ -1,0 +1,46 @@
+body {
+  padding: 0;
+}
+.cards {
+  width: 100%;
+  border: 1px solid #cecece;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+
+  border: 1px solid #cecece;
+  margin-right: 20px;
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.card h2 {
+  font-size: 15px;
+}
+.card p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.search {
+  border: 1px solid #cecece;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 250px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.reference {
+  margin-top: 20px;
+  display: inline-block;
+}
