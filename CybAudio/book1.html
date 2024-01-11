@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book 1</title>
+    <link rel="stylesheet" href="book1.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>
+        Create a Search Bar using HTML and CSS
+    </title>
+</head>
+
+<body>
+    <!-- Navbar items -->
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">CybAudio</a>
+        <a class="nav-link text-dark" href="#">Home</a>
+        <a class="nav-link text-dark" href="#">Genre</a>
+        <a class="nav-link text-dark" href="#">About</a>
+
+
+        <!-- drop down -->
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle bg-light text-dark border-0" href="#" role="button"
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Languages
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Marathi</a>
+                <a class="dropdown-item" href="#">Hindi</a>
+                <a class="dropdown-item" href="#">English</a>
+            </div>
+        </div>
+        <a class="nav-link text-dark" href="login_form.html"> <button class="btn btn-dark"
+                type="submit">Login</button></a>
+
+
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+</body>
+
+<!--MAIN SECTION-->
+<section>
+    <div class="detail-info">
+        <h6 style="font-size: 30px;">The Great Gatsby</h6><br>
+        <img src="images/the_great_gatsby.jpeg" alt="book-image" style="justify-content: center; width: 15em;"><br><br>
+        <div class="views">
+            <span class="views-icon"></span>
+            <span>4 Lakhs Listen &emsp;
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img
+                    src="images/rating.jpeg" style="width:20px; border-radius: 9px;">&emsp;4.1</span>
+        </div><br>
+        <div class="save-btn">
+            <!-- <i class="fa-regular fa-bookmark"></i>
+            <button class="play-button">
+                <span class="play-icon"></span>
+                Play
+              </button>-->
+            <audio controls autoplay style="width:50%; border-radius: 10px;">
+            </audio>
+        </div>
+
+</section>
+
+<section class="tabs">
+    <div class="container">
+        <div id="tab-1" class="tab-item tab-border">
+            <p class="hide-sm">Details</p>
+        </div>
+
+        <div id="tab-2" class="tab-item">
+            <p class="hide-sm">Cast and Crew</p>
+        </div>
+
+        <div id="tab-3" class="tab-item">
+            <p class="hide-sm">Author</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="tab-content">
+    <div class="container">
+        <!--Tab Content 1 -->
+        <div id="tab-1-content" class="tab-content-item show">
+            <div class="tab-1-content-inner">
+                <div>
+                    <p class="text=lg" style="font-size: 18px; text-align: justify;">
+                        Gatsby is known for hosting extravagant parties in the hope that his lost love, Daisy Buchanan,
+                        will attend. Daisy is married to Tom Buchanan, a wealthy but arrogant man. As the narrative
+                        unfolds, it becomes clear that Gatsby's wealth is a facade to win back Daisy, and the novel
+                        delves into the complexities of their relationships.
+
+                        The book portrays the decadence and excess of the Jazz Age, critiquing the superficiality and
+                        moral decay of society during that time. Tragedy ensues as characters grapple with illusions,
+                        unrequited love, and the consequences of their choices. Fitzgerald's writing captures the
+                        essence of the American Dream and its disillusionment, making "The Great Gatsby" a timeless
+                        exploration of the human condition.
+                    </p>
+                </div>
+                <div class="w3-content w3-section" style="max-width:500px">
+                    <img class="mySlides" src="images/image1.jpeg">
+                    <img class="mySlides" src="images/image2.jpeg">
+                    <img class="mySlides" src="images/image3.jpeg">
+                </div>
+            </div>
+        </div>
+
+        <!--Tab Content 2 -->
+        <div id="tab-2-content" class="tab-content-item">
+            <div class="tab-2-content-top">
+                <img src="">
+                <h3>abc</h3>
+            </div>
+
+        </div>
+
+        <!--Tab Content 3 -->
+        <div id="tab-3-content">
+            <div class="tab-3">
+                <img src="images/F.Scptt_Fitzgerald.jpeg"> <br> 
+                <h4 style="font-weight: bold;">F.Scott Fitzgerald</h4>
+
+            </div>
+            <div class="tab-3-text">
+                F. Scott Fitzgerald (born September 24, 1896, St. Paul, Minnesota, U.S.—died December 21, 1940, Hollywood, California) American short-story writer and novelist famous for his depictions of the Jazz Age (the 1920s), his most brilliant novel being The Great Gatsby (1925). His private life, with his wife, Zelda, in both America and France, became almost as celebrated as his novels.
+                Fitzgerald was the only son of an unsuccessful, aristocratic father and an energetic, provincial mother. Half the time he thought of himself as the heir of his father’s tradition, which included the author of “The Star-Spangled Banner,” Francis Scott Key, after whom he was named, and half the time as “straight 1850 potato-famine Irish.” As a result he had typically ambivalent American feelings about American life, which seemed to him at once vulgar and dazzlingly promising.
+            </div>
+        </div>
+       
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy 1997-2018 CybAudio, Inc.</p>
+    <p>Carlos Avila &copy 2018</p>
+</footer>
+<script src="./script.js"></script>
+</body>
+
+
+</html>
